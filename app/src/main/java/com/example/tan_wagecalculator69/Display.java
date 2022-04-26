@@ -18,7 +18,9 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
         TextView txtRegularWage;
         TextView txtTotalWage;
         TextView txtOTWage;
-
+        String EmployeeType;
+        String EmployeeName;
+        Double EmployeeHours;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,12 +35,14 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
 
 
          Button btnback = findViewById(R.id.btnBack);
+         btnback.setOnClickListener(this);
 
         Intent i = getIntent();
 
-        String EmployeeType = i.getStringExtra("type");
-        String EmployeeName = i.getStringExtra("empName");
-        Double EmployeeHours = Double.parseDouble(i.getStringExtra("hours"));
+         EmployeeType = i.getStringExtra("type");
+         EmployeeName = i.getStringExtra("empName");
+         EmployeeHours = i.getDoubleExtra("hours",0);
+
 
         txtName.setText("Employee Name: " + EmployeeName);
         txtType.setText("Employee Type: " + EmployeeType);

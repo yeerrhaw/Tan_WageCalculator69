@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".Display"
-            android:exported="true"/>
+            android:exported="false"/>
     </application>
 
 
