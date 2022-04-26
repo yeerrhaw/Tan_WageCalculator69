@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         calculate = findViewById(R.id.button);
 
+        calculate.setOnClickListener(this);
+
 
     }
     @Override
@@ -40,14 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             btnSelected = findViewById(selectedEmployeeType);
 
-            String type = btnSelected.getText().toString();
+            //String type = btnSelected.getText().toString();
 
             String name = employeeName.getText().toString();
             String totalHours = (employeeHours.getText().toString());
 
             Intent intent = new Intent(this, Display.class);
 
-            intent.putExtra("type", type);
+            intent.putExtra("type", selectedEmployeeType);
             intent.putExtra("empName", name);
             intent.putExtra("hours", totalHours);
             startActivity(intent);
