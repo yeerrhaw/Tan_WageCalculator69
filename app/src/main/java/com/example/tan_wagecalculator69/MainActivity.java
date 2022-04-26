@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String name = employeeName.getText().toString();
             String totalHours = (employeeHours.getText().toString());
 
-            Intent intent = new Intent(this, Display.class);
+            Intent intent = new Intent(this, displaystuff.class);
 
             intent.putExtra("type", type);
             intent.putExtra("empName", name);

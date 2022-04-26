@@ -1,15 +1,18 @@
 package com.example.tan_wagecalculator69;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Display extends AppCompatActivity implements View.OnClickListener {
+public class displaystuff extends AppCompatActivity implements View.OnClickListener {
 
 
         TextView txtName;
@@ -58,7 +61,8 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
         double totalOTWage = 0.0;
 
         switch (employeeType) {
-            case "Regular Employee":
+            case "Regular":
+                Log.d(TAG, "calcWage: miguel bayot bbm sara ");
                 if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 115) + 800;
@@ -73,7 +77,8 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
                     txtRegularWage.setText("₱" + totalWage);
                 }
                 break;
-            case "Part-Time Worker":
+            case "Part-Time":
+                Log.d(TAG, "calcWage: miguel bayot bbm sara ");
                 if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 90) + 600;
@@ -88,7 +93,8 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
                     txtRegularWage.setText("₱" + totalWage);
                 }
                 break;
-            case "Probationary Employee":
+            case "Probationary":
+                Log.d(TAG, "calcWage: miguel bayot bbm sara ");
                 if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 100) + 720;
@@ -116,7 +122,7 @@ public class Display extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btnBack) { //Return To Main Activity
-            startActivity(new Intent(Display.this, MainActivity.class));
+            startActivity(new Intent(displaystuff.this, MainActivity.class));
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }
     }

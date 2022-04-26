@@ -11,7 +11,7 @@
         android:id="@+id/employeeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="48dp"
         android:text="Name:"
         android:textColor="@color/teal_200"
         android:textSize="24dp"
@@ -23,10 +23,12 @@
         android:id="@+id/employeetype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="52dp"
         android:text="Employee Type:"
         android:textColor="@color/teal_200"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="@+id/employeeName"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/employeeName"
         app:layout_constraintTop_toBottomOf="@+id/employeeName" />
 
@@ -34,11 +36,12 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="Total Wage Received:"
         android:textColor="@color/teal_200"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="@+id/employeetype"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="@+id/employeetype"
         app:layout_constraintTop_toBottomOf="@+id/employeetype" />
 
@@ -46,7 +49,7 @@
         android:id="@+id/twrResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="0"
         android:textColor="#F13B3B"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
@@ -55,13 +58,13 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="132dp"
-        android:layout_height="37dp"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
         android:layout_marginTop="28dp"
         android:text="Total Regular Wage:"
         android:textColor="@color/teal_200"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="@+id/twrResult"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/twrResult"
         app:layout_constraintTop_toBottomOf="@+id/twrResult" />
 
@@ -69,11 +72,11 @@
         android:id="@+id/trwResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         android:text="0"
         android:textColor="#F13B3B"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -84,20 +87,21 @@
         android:layout_marginTop="36dp"
         android:text="Hours Rendered:"
         android:textColor="@color/teal_200"
-        app:layout_constraintEnd_toEndOf="@+id/trwResult"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/trwResult"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/trwResult" />
 
     <TextView
         android:id="@+id/hrResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="0"
         android:textColor="#F13B3B"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -118,23 +122,23 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="17dp"
         android:text="Total OT Wage:"
         android:textColor="@color/teal_200"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/hrResult"
+        app:layout_constraintStart_toStartOf="@+id/hrResult"
         app:layout_constraintTop_toBottomOf="@+id/hrResult" />
 
     <TextView
         android:id="@+id/otResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="0"
         android:textColor="#F13B3B"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 </androidx.constraintlayout.widget.ConstraintLayout>
