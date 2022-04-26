@@ -35,6 +35,7 @@ public class displaystuff extends AppCompatActivity implements View.OnClickListe
         txtHours = findViewById(R.id.hrResult);
         txtTotalWage = findViewById(R.id.twrResult);
         txtRegularWage =findViewById(R.id.trwResult);
+        txtOTWage = findViewById(R.id.otResult);
 
 
          Button btnback = findViewById(R.id.btnBack);
